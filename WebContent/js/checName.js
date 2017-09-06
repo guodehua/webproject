@@ -1,0 +1,32 @@
+$(function(){
+	$('#uname').on('input',function(){
+		//通过服务器请求资源
+		$.ajax({
+			data:{'uname':$(this).val()},
+			type:'GET',
+			url:'/webproject/checkname.do',
+			success:function(data){
+				if(data=='1'){
+					$('#sp').html("已被注册")
+				}else{
+					$('#sp').html("可以使用")	
+				}
+			}
+		});
+	})
+	$('#uemail').on('input',function(){
+		//通过服务器请求资源
+		$.ajax({
+			data:{'uemail':$(this).val()},
+			type:'GET',
+			url:'/webproject/checkemail.do',
+			success:function(data){
+				if(data=='1'){
+					$('#esp').html("已被注册")
+				}else{
+					$('#esp').html("可以使用")	
+				}
+			}
+		});
+	})
+})

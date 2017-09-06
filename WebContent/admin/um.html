@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户信息</title>
+		<link rel="stylesheet" type="text/css" href="/webproject/admin/easyui/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="/webproject/admin/easyui/themes/icon.css"/>
+		<script src="/webproject/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/webproject/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/webproject/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/webproject/admin/js/um.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#atb{width:300px;margin:20px auto;}
+		</style>
+	</head>
+	<body>
+		用户管理
+		<hr />
+		
+		<table border="1px" id="tb" name="tb"></table>
+		
+		<div
+			id= "dialog"
+			class = "easyui-dialog"
+			title = "添加用户"
+			style="width: 400px;height: 500px"
+			data-options="iconCls:'icon-add',resizable:true,collapsible:true,closed:true,buttons:'#footer'" >
+			<form id ="f1" action="" method="post">
+				<table id="atb" name="atb">
+					<tr>
+						<td>邮箱</td>
+						<td><input class="easyui-textbox" id="uemail" name="uemail"  type="text" data-options="required:true" /></td>
+					</tr>
+					<tr>
+						<td>账号</td>
+						<td><input class="easyui-textbox " id="uname" name="uname"  type="text" /></td>
+					</tr>
+					<tr>
+						<td>密码</td>
+						<td><input class="easyui-textbox" id="upassword" name="upassword" type="text" /></td>
+					</tr>
+					<tr>
+						<td>地址</td>
+						<td><input class="easyui-textbox" id="uaddress" name="uaddress" type="text" /></td>
+					</tr>
+					<tr>
+						<td>电话</td>
+						<td><input class="easyui-textbox" id="utel" name="utel" type="text" /></td>
+					</tr>
+					<tr>
+						<td>性别</td>
+						<td><input class="easyui-textbox easyui-combobox" id="usex" name="usex" value='男' type="text" data-options="
+		valueField: 'label',textField: 'value',data: [{label: 'java',value: '男'},{label: 'perl',value: '女'}]"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="footer">
+			<a id="btnsave" href="#" class="easyui-linkbutton">保存</a>
+			
+			<a id="btncecle" href="#" class="easyui-linkbutton">取消</a>
+		</div>
+	</body>
+</html>

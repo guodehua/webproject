@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+		<link rel="stylesheet" type="text/css" href="/webproject/admin/easyui/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="/webproject/admin/easyui/themes/icon.css"/>
+		<script src="/webproject/admin/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/webproject/admin/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/webproject/admin/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/webproject/admin/js/goodsedit.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+		</style>
+</head>
+<body>
+	<input id="cc" name="cc" type="text" value="请输入商品名称进行搜索">
+	<div id="ide" name="ide" class="easyui-dialog" style="width:400px;height:300px"
+		data-options="title:'商品详细信息（可修改价格）',modal:true,closed:true ">
+			<table>
+			<tr><td>编号   <input class="easyui-textbox" style="width:300px"  id="gId" name="gId" ></td></tr>
+			<tr><td>书名   <input class="easyui-textbox" style="width:300px" id="gTitle" name="gTitle" ></td></tr>
+			<tr><td>作者   <input class="easyui-textbox" style="width:300px" id="gAuthor" name="gAuthor" ></td></tr>
+			<tr><td>进价   <input class="easyui-textbox" style="width:300px" id="gInprice" name="gInprice" ></td></tr>
+			<tr><td>售价   <input class="easyui-textbox" style="width:300px" id="gSaleprice" name="gSaleprice" ></td></tr>
+			<tr><td>类别   <input class="easyui-textbox" style="width:300px" id="cId" name="cId" ></td></tr>
+			<tr><td>出版   <input class="easyui-textbox" style="width:300px" id="pId" name="pId" ></td></tr>			
+			</table>
+	</div>
+
+	
+</body>
+</html>
